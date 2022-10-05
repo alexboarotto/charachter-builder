@@ -6,7 +6,7 @@ from bpy_extras.io_utils import ImportHelper
 from .helpers import helpers
 from .auto_rigger import autorigger
 
-SCALE = 5
+SCALE = 20
 
 class SelectDir(bpy.types.Operator, ImportHelper):
 
@@ -40,6 +40,7 @@ class SelectDir(bpy.types.Operator, ImportHelper):
         
     def execute(self, context):
         root_path = self.properties.filepath
+
 
         # remove current objects in scene
         for obj in bpy.data.objects:

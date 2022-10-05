@@ -17,3 +17,4 @@ class autorigger():
                 obj.select_set(True)
                 armature.select_set(True)
                 bpy.ops.object.parent_set(type = 'ARMATURE_AUTO')
+                bpy.ops.object.select_all(action='DESELECT')
